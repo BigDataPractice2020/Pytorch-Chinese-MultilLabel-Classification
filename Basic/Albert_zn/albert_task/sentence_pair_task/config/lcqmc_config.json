@@ -1,0 +1,16 @@
+{
+  "model_name": "sentence_pair",
+  "epochs": 10,
+  "checkpoint_every": 1000,
+  "eval_every": 1000,
+  "learning_rate": 3e-5,
+  "sequence_length": 36,
+  "batch_size": 128,
+  "num_classes": 3,
+  "warmup_rate": 0.1,
+  "output_path": "/opt/data/wangkehan/output/lcqmc",
+  "bert_model_path": "/home/wangkehan/bert-for-task/albert_task/albert_model/albert_base",
+  "train_data": "/home/wangkehan/home/project/train.txt",
+  "eval_data": "/home/wangkehan/home/project/dev.txt",
+  "ckpt_model_path": "/opt/data/wangkehan/output/ckpt_model3"
+}
