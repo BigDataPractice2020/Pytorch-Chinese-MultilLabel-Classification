@@ -12,6 +12,14 @@ Codes for the project
 /Postprocessor 后处理
 ```
 
+### 模型
+
+- [x] Roberta_wwm
+- [x] Albert_zn
+- [ ] TinyBert
+- [x] FastBert
+- [ ] BertToSimple
+
 ## 结果
 
 ## 参考文献

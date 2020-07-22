@@ -1,0 +1,13 @@
+python3 train.py \
+    --model_config_file='config/fastbert_cls_21.json' \
+    --save_model_path='saved_model/fastbert_test_21' \
+    --save_model_path_distill='saved_model/fastbert_test_distill_21' \
+    --run_mode=train \
+    --train_stage=1 \
+    --train_data='./sample/project/train.tsv' \
+    --eval_data='./sample/project/dev.tsv' \
+    --epochs=1 \
+    --batch_size=32 \
+    --data_load_num_workers=2 \
+    --gpu_ids='1,0' \
+    --debug_break=0
