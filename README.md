@@ -1,6 +1,8 @@
 # Pytorch-Chinese-MultilLabel-Classification
 Codes for the project
 
+![](https://gitee.com/feiyuxiao/blogimage/raw/master/img/bairong.gif) 
+
 ## 目录
 
 -[Requirements](#Requirements)
