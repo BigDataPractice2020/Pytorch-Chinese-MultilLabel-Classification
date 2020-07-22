@@ -1,0 +1,1 @@
+Please push your commits to the dev branch and never merge to the master branch.
