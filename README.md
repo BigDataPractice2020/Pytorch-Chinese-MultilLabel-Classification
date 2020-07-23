@@ -33,7 +33,10 @@ Codes for the project
 - [x] FastBert
 - [ ] BertToSimple
 
-## 结果
+## 效果对比
+
+| 模型 | 描述 | 参数量| 准确率 | 预测响应时间 |
+|RoBerta| [科大讯飞全遮罩模型]() |100M | | | 
 
 ## 参考文献
 
