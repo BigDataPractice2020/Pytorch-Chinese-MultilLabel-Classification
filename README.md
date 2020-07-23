@@ -8,8 +8,7 @@ Codes for the project
 -[Requirements](#Requirements)
 
 -[技术路线](#技术路线)
-
-​    -[模型](#模型) 
+    [模型](#模型) 
 
 -[结果](#结果)
 
