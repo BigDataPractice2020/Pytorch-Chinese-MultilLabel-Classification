@@ -29,15 +29,13 @@ Codes for the project
 
 - [x] Roberta_wwm
 - [x] Albert_zn
-- [ ] TinyBert
+- [x] TinyBert
 - [x] FastBert
-- [ ] BertToSimple
+- [x] BiGRU
 
 ## 效果对比
 
-| 模型 | 描述 | 参数量| 准确率 | 预测响应时间 |
-|  ----  | ----  | ----  | ----  | ----  |
-|RoBerta| [科大讯飞全遮罩模型]() |100M | | | 
+
 
 ## 参考文献
 
