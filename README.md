@@ -33,8 +33,24 @@ Codes for the project
 - [x] FastBert
 - [x] BiGRU
 
-## 效果对比
+## 模型说明
+### 基础架构
+![](https://gitee.com/feiyuxiao/blogimage/raw/master/img/bert_base.png)
+特征向量生成：由原始特征经过特征统计生成
+输入层：其中 X 表示节点类别，P 表示回答的内容，将两者进行拼接作为最终输入。
+Transformer编码层：按照 Bert 和 albert 会有不同
+输出层：一层全连接网络得到打分输出分类结果。
 
+### 文本特征挖掘
+![](https://gitee.com/feiyuxiao/blogimage/raw/master/img/pre_bert.png)
+将每一类的类别信息词和文本信息进行拼接后再进行分类，如 [类别词][SEP][原始文本]
+
+### BiGRU模型架构
+![](https://gitee.com/feiyuxiao/blogimage/raw/master/img/bert_lstm.png)
+词的embedding层是直接从teacher model上复制过来的，加快网络收敛速度。网络主干部分采用双向GRU。输出层部分是一个两层全连接网络，输入可以是GRU的输出也可以是GRU最后一个时间步的隐藏单元，分别对应Model A 和B。采用Model B时，因为输入词长短不一，为了得到真正的最后一个字输出的隐藏单元，需要利用for循环进行单时间步的训练，所以速度会慢一些。Model A 和B准确率都能达到90%。损失函数时MSE和交叉熵的结合，分别拟合teacher model的logits 和真正的标签信息。
+
+## 效果对比
+![](https://gitee.com/feiyuxiao/blogimage/raw/master/img/bert_final.png)
 
 
 ## 参考文献
