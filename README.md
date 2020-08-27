@@ -51,8 +51,6 @@ Transformer编码层：按照 Bert 和 albert 会有不同
 
 ## 效果对比
 ![](https://gitee.com/feiyuxiao/blogimage/raw/master/img/bert_final.png)
-
-
 ## 参考文献
 
 1. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
